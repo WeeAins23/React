@@ -1,0 +1,63 @@
+/* Navbar.css */
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fcfe;
+  color: #f1f0f4;
+  text-align: center;
+}
+
+h1 {
+  color: #010810;
+  margin-top: 40px;
+}
+
+p {
+  color: #5c0606;
+  font-size: 1.1em;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Navigation Styles */
+nav {
+  margin-top: 30px;
+  /* background-color: #61b4eb; */
+  padding: auto;
+  font-size: 30px;
+}
+
+nav a {
+  color: #6f2bee;
+  text-decoration: underline;
+  margin: auto;
+  /* font-weight: bold; */
+  transition: color 0.3s ease;
+  /* background-color: #bbddf4; */
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+/* Page-specific container (optional if you want consistent padding) */
+.container {
+  padding: 0 20px;
+}
+
+/* Footer style (if needed in future) */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #2c3e50;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}

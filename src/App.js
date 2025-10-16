@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React, {Component} from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
+import Test2 from './pages/Test2';
+import Timer from './pages/Timer';
+import ExperimentPage from './pages/ExperimentPage';
+import OddEven from './pages/OddEven';
+
+import Nav from './components/Navbar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Nav />
+        <div className='page-content'>
+          <Routes>
+            <Route path='Test2' element={<Test2 />} />
+            <Route path='/Timer' element={<Timer />} />
+            <Route path='/ExperimentPage' element={<ExperimentPage />} />
+            <Route path='/OddEven' element={<OddEven />} />
+          </Routes>
+        </div>
+    </Router>
   );
 }
 
