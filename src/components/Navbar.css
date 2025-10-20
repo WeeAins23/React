@@ -1,12 +1,10 @@
-/* Navbar.css */
 /* General Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f9fcfe;
-  color: #f1f0f4;
   text-align: center;
 }
 
@@ -34,9 +32,9 @@ nav a {
   color: #6f2bee;
   text-decoration: underline;
   margin: auto;
-  /* font-weight: bold; */
+  font-weight: bold;
   transition: color 0.3s ease;
-  /* background-color: #bbddf4; */
+  background-color: #bbddf4;
   padding: 10px;
 }
 

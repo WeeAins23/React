@@ -1,0 +1,51 @@
+.traffic-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grey border and black background for the traffic light */
+.traffic-light-box {
+  background-color: black;
+  border: 5px solid #555;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between the lights */
+  padding: 20px;
+}
+
+/* Base style for all three lights (the "off" state) */
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Makes them circles */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Setting the dim, "off" colors for each light */
+.light.red {
+  background-color: #4d0000; /* Dark red */
+}
+.light.amber {
+  background-color: #4d4d00; /* Dark yellow/amber */
+}
+.light.green {
+  background-color: #004d00; /* Dark green */
+}
+
+/* The "on" state for each light, applied when the 'active' class is present */
+.light.red.active {
+  background-color: #ff0000;
+  box-shadow: 0 0 25px 5px #ff0000; /* Creates a glowing effect */
+}
+.light.amber.active {
+  background-color: #ffcc00;
+  box-shadow: 0 0 25px 5px #ffcc00;
+}
+.light.green.active {
+  background-color: #00ff00;
+  box-shadow: 0 0 25px 5px #00ff00;
+}

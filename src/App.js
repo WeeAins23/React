@@ -5,6 +5,8 @@ import Test2 from './pages/Test2';
 import Timer from './pages/Timer';
 import ExperimentPage from './pages/ExperimentPage';
 import OddEven from './pages/OddEven';
+import TrafficLights from './pages/TrafficLights';
+import Arrays from './pages/Arrays';
 
 import Nav from './components/Navbar'
 
@@ -18,6 +20,8 @@ function App() {
             <Route path='/Timer' element={<Timer />} />
             <Route path='/ExperimentPage' element={<ExperimentPage />} />
             <Route path='/OddEven' element={<OddEven />} />
+            <Route path="/TrafficLights" element={<TrafficLights />} />
+            <Route path="/Arrays" element={<Arrays />} />
           </Routes>
         </div>
     </Router>
