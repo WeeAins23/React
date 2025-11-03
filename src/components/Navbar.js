@@ -14,6 +14,7 @@ export default function Navbar() {
         <Link to='/OddEven'>OddEven</Link>
         <Link to="/TrafficLights">Traffic Lights</Link>
         <Link to="/Arrays">Arrays</Link>
+        <Link to="/ObjectsandArrays">Objects & Arrays</Link>
     </nav>
   )
 }

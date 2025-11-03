@@ -7,6 +7,7 @@ import ExperimentPage from './pages/ExperimentPage';
 import OddEven from './pages/OddEven';
 import TrafficLights from './pages/TrafficLights';
 import Arrays from './pages/Arrays';
+import ObjectsandArrays from './pages/ObjectsandArrays';
 
 import Nav from './components/Navbar'
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/OddEven' element={<OddEven />} />
             <Route path="/TrafficLights" element={<TrafficLights />} />
             <Route path="/Arrays" element={<Arrays />} />
+            <Route path="/ObjectsandArrays" element={<ObjectsandArrays />} />
           </Routes>
         </div>
     </Router>

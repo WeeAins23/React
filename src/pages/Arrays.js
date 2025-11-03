@@ -24,7 +24,7 @@ export default function Arrays() {
     // JSX section - what appears on the web page
     return (
         <div>
-            <h2> Arrays</h2>
+            <h1> Arrays</h1>
             {/* Inline styling example:
                 The background colour is taken from the second item in the colours array*/}
                 <p style={{ backgroundColor: colours[1]}}>
@@ -34,13 +34,20 @@ export default function Arrays() {
                     {fruits[1]}
                 </p>
 
-                <h3> Fruit's List </h3>
+                <h2> Fruit's List </h2>
                 {/* Displaying all fruits dynamically.
                     Added a unique 'key' prop to each h3 element.
                     Changed the parameter name to 'fruit' for clarity. */}
-                {fruits.map((fruit) => (
-                    <h3 key={fruit}>{fruit}</h3>
+                
+                <ul>
+                {fruits.map((fruit, index) => (
+                    <li
+                        key={fruit} style={{color: colours[index % colours.length]}}>
+                        {fruit}
+                    </li>
                 ))}
+
+            </ul>
 
                 <h2> Cities </h2>
                 
