@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className='marginButton'>
+    <nav className='marginButton navbar2'>
         <Link to='/Test2' //</nav>style={{marginRight: "10px"}}
         >
         TestState
@@ -15,6 +15,8 @@ export default function Navbar() {
         <Link to="/TrafficLights">Traffic Lights</Link>
         <Link to="/Arrays">Arrays</Link>
         <Link to="/ObjectsandArrays">Objects & Arrays</Link>
+        <Link to="/Pet">Pet</Link>
+        <Link to="/VariablesAndStates">Variables and States</Link>
     </nav>
-  )
+  );
 }
